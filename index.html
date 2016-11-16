@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>User Registrar</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <h1>Simple User Registrar</h1>
+                    <form class="registration" action="process.rb" method="post">
+                        <div class="form-control">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <input type="text" name="name" id="name" placeholder="Name" required="true">
+                        </div>
+                        <div class="form-control">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last Name" required="true">
+                        </div>
+                        <div class="form-control">
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                            <input type="email" name="email" id="email" placeholder="Email" required="true">
+                        </div>
+                        <div class="form-control">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <input type="tel" name="tel" id="tel" placeholder="Number" required="true">
+                        </div>
+                        <div class="register_btn">
+                            <button type="submit" name="button" id="btn">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </header>
+            <section class="table">
+                <div class="row">
+                    <h2>User Information</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Last Name
+                                </th>
+                                <th>
+                                    Email address
+                                </th>
+                                <th>
+                                    Phone number
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/657077b5e6.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
